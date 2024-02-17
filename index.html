@@ -1,14 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>P Paribahan</title>
     <!-- daisy UI and Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- custom css -->
+<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<!-- navbar start -->
+    <nav>
+        <div class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu text-[#424247] menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class=" word-color text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-[#030712B3]  px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end  ">
+                    <button class="flex justify-center items-center  gap-3 lg:w-36 lg:border-2 lg:rounded-xl lg:border-[#1DD10066]">
+                        <a class=" text-[#1DD100] text-xl font-bolds">Bus</a>
+                        <img class=" lg:block" src="./images/bus-icon.png" alt="">
+                      </button>
+                  </div>
+            </div>
+        </div>
+    </nav>
+<!-- navbar end -->
+
+<!-- banner section start -->
+<div class="hero h-[550px] container mx-auto rounded-3xl " style="background-image: url(./images/banner.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with <span class="text-[#1DD100]">P Paribahan</span></h1>
+        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button class="btn btn-primary bg-[#1DD100] text-[#030712]">Buy Tickets</button>
+      </div>
+    </div>
+  </div>
+  <!-- banner section end --> 
+
+
+
+  <!-- paribahan part -->
+<section class="container mx-auto ">
+    <div class="mt-48 ">
+        <h1 class="text-[40px] font-bold flex justify-center">P.H Paribahan</h1>
+        <p class="text-lg text-[#03071299] flex justify-center mt-3 mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae commodi fugit laborum deleniti id! Quam d!</p>
+    </div>
+
+    <div class="flex justify-between">
+        <div class="flex gap-3">
+            <div>
+                <img src="./images/bus-logo.png" alt="">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold">Greenline Paribahan</h2>
+                <p class=" text-lg text-[#03071299]">coach-009-WEB | Ac_Business</p>
+            </div>
+        </div>
+        <div class="flex gap-2">
+           <div>
+            <img src="./images/seat-green.png" alt="">
+           </div>
+            <div>
+                <p class="text-lg font-medium text-[#1DD100]"><span>40</span> Seats left</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- bus seat section -->
+
+<section class="container mx-auto">
+    <h2 class="font-semibold text-2xl">Select Your Seat</h2>
+    <div class="flex justify-between">
+        <div class="flex">
+            <img src="./images/seat-gray.png" alt="">
+            <p class="text-lg font-medium">Available</p>
+        </div>
+        <div class="flex">
+            <img src="./images/seat-green-filled.png" alt="">
+            <p class="text-lg font-medium text-[#1DD100]">Selected</p>
+        </div>
+    </div>
+
+
+</section>
+
+  <div class="flex  gap-1 my-1 ">
+    <div class="flex justify-center items-center">
+        <p>A</p>
+    </div>
+  <div>
+    <kbd class="kbd">A1</kbd>
+    <kbd class="kbd">A2</kbd>
+  </div>
+   <div>
+    <kbd class="kbd">A3</kbd>
+    <kbd class="kbd">A4</kbd>
+   </div>  
+  </div> 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     <script src="./js/ticket.js"></script>
 </body>
 </html>

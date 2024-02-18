@@ -95,6 +95,14 @@ function setInnerText(id, value) {
 }
 
 
+const nextBtn = document.getElementById("next");
 
+nextBtn.addEventListener('click', function(){
 
+    const allPartDisable = document.getElementById("all-part");
+    allPartDisable.classList.add("hidden");
 
+    const successPartEnable = document.getElementById("success-part");
+    successPartEnable.classList.remove("hidden")
+
+})

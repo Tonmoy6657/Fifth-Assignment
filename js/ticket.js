@@ -1,13 +1,30 @@
 const allBtn = document.getElementsByClassName("add-btn");
+
 let count = 0;
 for (const btn of allBtn) {
     btn.addEventListener("click", function (e) {
 
+        if (count >= 4) {
+            return; 
+        }
+
+        if (!e.target.disabled) {
+            
         count = count + 1;
         setInnerText("seat-count", count);
         const seatName = e.target.parentNode.childNodes[1].innerText;
         const category = "Economy";
         const price = "550";
+
+        if (count > 4) {
+            return;
+        }
+        if (count > 4) {
+            for (const btn of allBtn) {
+                btn.disabled = true;
+            }
+        }
+
 
         const selectedContainer = document.getElementById("selected-place-container");
         const li = document.createElement("li");
@@ -43,7 +60,9 @@ for (const btn of allBtn) {
         setInnerText("grand-total", sum2);
 
         e.target.parentNode.childNodes[1].style.backgroundColor = "limegreen";
-       
+        e.target.disabled = true;
+
+
 
         const clickBtn = document.getElementById("apply-btn");
         clickBtn.addEventListener("click", function () {
@@ -86,6 +105,16 @@ for (const btn of allBtn) {
         })
 
 
+
+
+
+
+        }
+
+
+       
+
+
     })
 }
 
@@ -106,3 +135,20 @@ nextBtn.addEventListener('click', function(){
     successPartEnable.classList.remove("hidden")
 
 })
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const directBtn = document.getElementById("direct-btn");
+    const seatSelectionSection = document.getElementById("seat-selection-section");
+
+    directBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        
+        const sectionPosition = seatSelectionSection.getBoundingClientRect().top + window.scrollY;
+
+        window.scrollTo({
+            top: sectionPosition,
+            behavior: "smooth"
+        });
+    });
+});
